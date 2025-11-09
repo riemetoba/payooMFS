@@ -1,5 +1,7 @@
 @import "tailwindcss";
+
+@plugin "daisyui";
+
 @theme {
   --font-my: "Outfit", sans-serif; 
 }
-@plugin "daisyui";
