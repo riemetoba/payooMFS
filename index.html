@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payoo-MFS</title>
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font  -->
+    <!-- Css Link Start -->
+    <link rel="stylesheet" href="src/all.min.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- Css Link End -->
+  </head>
+  <body>
+    <!-- 1st Part Start  -->
+    <div class="max-w-[1170px] m-auto text-center" id="firstPart">
+      <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+        <div
+          class="mockup-phone-display text-white grid place-content-center bg-neutral-900"
+        >
+          <h3 class="mb-3.5 text-3xl">Payoo</h3>
+          <!-- Num Pin content  -->
+          <!-- Toast start  -->
+          <div class="toast toast-center" id="errorMsg" hidden>
+            <div
+              class="alert alert-success bg-red-600 border-none text-[#ffffff] padding-[10px 20px] rounded-b-3xl"
+            >
+              <span>Wrong Info</span>
+            </div>
+          </div>
+          <!-- Toast end -->
+          <div class="card bg-base-200 w-[400px] max-w-sm shadow-3xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label">Mobile Number</label>
+                <input
+                  type="text"
+                  class="input outline-0"
+                  placeholder="Enter your number"
+                  id="numberInput"
+                />
+                <label class="label">4 Digit Pin</label>
+                <input
+                  type="password"
+                  class="input outline-0"
+                  placeholder="Enter 4 Digit Pin"
+                  id="pinInput"
+                />
+                <button class="btn btn-neutral mt-4" id="loginBtn">
+                  Login
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Num Pin content  -->
+    </div>
+    <!-- 1st Part End -->
+    <!-- 2nd Part start  -->
+    <div class="max-w-[1170px] m-auto text-center" id="secondPart">
+      <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display text-white bg-neutral-900">
+          <!-- Time & wifi part start  -->
+          <div class="mx-5">
+            <div class="flex justify-between">
+              <h6 class="mt-[30px] text-left">9:41</h6>
+              <div class="flex justify-end py-1 px-3 mt-[30px]">
+                <i class="fa-solid fa-chart-simple"></i>
+                <i class="fa-solid fa-wifi mx-2"></i>
+                <i class="fa-solid fa-battery-full"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Time & wifi part end  -->
+          <!-- Logo & Logout part start  -->
+          <div class="mx-5 my-5">
+            <div class="flex mt-10">
+              <img src="images/logo.png" alt="logo.png" />
+              <div class="">
+                <h5 class="font-my text-[18px] font-extrabold">$45000</h5>
+                <p class="font-my text-[14px] mt-4">Available Balance</p>
+              </div>
+              <div class="ms-auto flex mt-4">
+                <a href="#" class="hover:text-[#6161eb] duration-200"
+                  ><i class="fa-solid fa-right-from-bracket mr-2"></i>Log Out</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="border-b"></div>
+          <!-- Logo & Logout part end -->
+          <!-- Navigation Part Start  -->
+          <div class="mx-5 my-5">
+            <div class="flex">
+              <i class="fa-solid fa-fire text-[40px] text-[orange]"></i>
+              <h4 class="text-[24px] font-bold font-my ml-3">Welcome to Payoo!</h4>
+            </div>
+            <p
+              class="text-[16px] font-my w-[410px] text-left leading-7 mt-[10px]"
+            >
+              Enjoy easy and convenient financial services with us. Cashout
+              charge is low and
+            </p>
+            <!-- Flex Part 1 start========> -->
+            <div class="flex gap-3 mt-5">
+              <!-- =====> -->
+              <div
+                class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
+              >
+                <img
+                  src="images/wallet 1.png"
+                  alt="wallet 1.png"
+                  class="mt-4"
+                />
+                <a href="#" class="hover:text-[#6161eb] mb-4">Add Money</a>
+              </div>
+              <!-- =========> -->
+              <div
+                class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
+              >
+                <img src="images/send 1.png" alt="send 1.png" class="mt-4" />
+                <a href="#" class="hover:text-[#6161eb] mb-4">Cashout</a>
+              </div>
+              <!-- =========> -->
+              <div
+                class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
+              >
+                <img src="images/money 1.png" alt="money 1.png" class="mt-4" />
+                <a href="#" class="hover:text-[#6161eb] mb-4">Transfer Money</a>
+              </div>
+            </div>
+            <!-- Flex Part 1 end ========> -->
+            <!-- Flex Part 2 start ========> -->
+            <div class="flex gap-3 mt-5">
+              <!-- =====> -->
+              <div
+                class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
+              >
+                <img
+                  src="images/financial 1.png"
+                  alt="financial 1.png"
+                  class="mt-4"
+                />
+                <a href="#" class="hover:text-[#6161eb] duration-200 mb-4">Get Bonus</a>
+              </div>
+              <!-- =========> -->
+              <div
+                class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
+              >
+                <img src="images/purse 1.png" alt="purse 1.png" class="mt-4" />
+                <a href="#" class="hover:text-[#6161eb] duration-200 mb-4">Pay Bill</a>
+              </div>
+              <!-- =========> -->
+              <div
+                class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
+              >
+                <img
+                  src="images/transaction 1.png"
+                  alt="transaction 1.png"
+                  class="mt-4"
+                />
+                <a href="#" class="hover:text-[#6161eb] duration-200 mb-4">Transactions</a>
+              </div>
+            </div>
+            <!-- Flex Part 2 End ======> -->
+          </div>
+          <!-- Navigation Part End -->
+          <!-- Navigation Part 2 Start -->
+           <div class="mx-5 my-5">
+            <div class="flex justify-between">
+              <div class="">
+                <h4 class="text-[18px] font-semibold font-my ml-3">Latest Payment</h4>
+              </div>
+              <div class="">
+                <a href="#" class="font-my text-[14px] hover:text-[#6161eb]">View All</a>
+              </div>
+            </div>
+            <!-- ============> -->
+            <div class="bg-[#3d3d3d] h-[70px] rounded-[8px] mt-3 flex gap-3 items-center">
+                <div class="py-5 ml-5">
+                  <img src="images/wallet 1.png" alt="wallet 1.png">
+                </div>
+                <div class="py-2 text-left">
+                  <h4 class="text-[18px] font-my">Electricity Bill</h4>
+                  <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
+                </div>
+                <div class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <!-- ============> -->
+            <div class="bg-[#3d3d3d] h-[70px] rounded-[8px] mt-3 flex gap-3 items-center">
+                <div class="py-5 ml-5">
+                  <img src="images/wallet 1.png" alt="wallet 1.png">
+                </div>
+                <div class="py-2 text-left">
+                  <h4 class="text-[18px] font-my">Bank Deposit</h4>
+                  <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
+                </div>
+                <div class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <!-- ============> -->
+            <div class="bg-[#3d3d3d] h-[70px] rounded-[8px] mt-3 flex gap-3 items-center">
+                <div class="py-5 ml-5">
+                  <img src="images/wallet 1.png" alt="wallet 1.png">
+                </div>
+                <div class="py-2 text-left">
+                  <h4 class="text-[18px] font-my">Mobile Recharge</h4>
+                  <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
+                </div>
+                <div class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <!-- ============> -->
+            <div class="bg-[#3d3d3d] h-[70px] rounded-[8px] mt-3 flex gap-3 items-center">
+                <div class="py-5 ml-5">
+                  <img src="images/wallet 1.png" alt="wallet 1.png">
+                </div>
+                <div class="py-2 text-left">
+                  <h4 class="text-[18px] font-my">Gas Bill</h4>
+                  <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
+                </div>
+                <div class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <!-- =================> -->
+           </div>
+          <!-- Navigation Part 2 End -->
+        </div>
+      </div>
+    </div>
+    <!-- 2nd Part End -->
+    <!-- JS Link Start -->
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- JS Link End -->
+  </body>
+</html>
