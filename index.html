@@ -65,7 +65,7 @@
     </div>
     <!-- 1st Part End -->
     <!-- 2nd Part start  -->
-    <div class="max-w-[1170px] m-auto text-center" id="secondPart" hidden>
+    <div class="max-w-[1170px] m-auto text-center" id="secondPart">
       <div class="mockup-phone">
         <div class="mockup-phone-camera"></div>
         <div class="mockup-phone-display text-white bg-neutral-900">
@@ -86,14 +86,19 @@
             <div class="flex mt-10">
               <img src="images/logo.png" alt="logo.png" />
               <div class="">
-                <h5 class="font-my text-[18px] font-extrabold">$45000</h5>
+                <h5 class="font-my text-[18px] font-extrabold" id="balance">800</h5>
                 <p class="font-my text-[14px] mt-4">Available Balance</p>
               </div>
-              <div class="ms-auto flex mt-4">
-                <a href="#" class="hover:text-[#6161eb] duration-200"
-                  ><i class="fa-solid fa-right-from-bracket mr-2"></i>Log Out</a
-                >
-              </div>
+              <button
+                class="hover:text-[#6161eb] ms-auto flex mt-4 duration-200"
+                id="logOutBtn"
+              >
+                <i
+                  class="fa-solid fa-right-from-bracket mr-2 mt-1.5"
+                  id="logOutBtn"
+                ></i
+                >Log Out
+              </button>
             </div>
           </div>
           <div class="border-b"></div>
@@ -102,11 +107,11 @@
           <div class="mx-5 my-5">
             <div class="flex">
               <i class="fa-solid fa-fire text-[40px] text-[orange]"></i>
-              <h4 class="text-[24px] font-bold font-my ml-3">Welcome to Payoo!</h4>
+              <h4 class="text-[24px] font-bold font-my ml-3">
+                Welcome to Payoo!
+              </h4>
             </div>
-            <p
-              class="text-[16px] font-my w-[410px] text-left leading-7 mt-2.5"
-            >
+            <p class="text-[16px] font-my w-[410px] text-left leading-7 mt-2.5">
               Enjoy easy and convenient financial services with us. Cashout
               charge is low and
             </p>
@@ -121,21 +126,27 @@
                   alt="wallet 1.png"
                   class="mt-4"
                 />
-                <a href="#" class="hover:text-[#6161eb] mb-4">Add Money</a>
+                <button class="hover:text-[#6161eb] mb-4" id="addMoneyBtn">
+                  Add Money
+                </button>
               </div>
               <!-- =========> -->
               <div
                 class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
               >
                 <img src="images/send 1.png" alt="send 1.png" class="mt-4" />
-                <a href="#" class="hover:text-[#6161eb] mb-4">Cashout</a>
+                <button class="hover:text-[#6161eb] mb-4" id="cashOutBtn">
+                  Cashout
+                </button>
               </div>
               <!-- =========> -->
               <div
                 class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
               >
                 <img src="images/money 1.png" alt="money 1.png" class="mt-4" />
-                <a href="#" class="hover:text-[#6161eb] mb-4">Transfer Money</a>
+                <button class="hover:text-[#6161eb] mb-4">
+                  Transfer Money
+                </button>
               </div>
             </div>
             <!-- Flex Part 1 end ========> -->
@@ -150,14 +161,14 @@
                   alt="financial 1.png"
                   class="mt-4"
                 />
-                <a href="#" class="hover:text-[#6161eb] duration-200 mb-4">Get Bonus</a>
+                <button class="hover:text-[#6161eb] mb-4">Get Bonus</button>
               </div>
               <!-- =========> -->
               <div
                 class="bg-[#3d3d3d] h-[100px] w-[150px] grid place-items-center rounded-2xl"
               >
                 <img src="images/purse 1.png" alt="purse 1.png" class="mt-4" />
-                <a href="#" class="hover:text-[#6161eb] duration-200 mb-4">Pay Bill</a>
+                <button class="hover:text-[#6161eb] mb-4">Pay Bill</button>
               </div>
               <!-- =========> -->
               <div
@@ -168,83 +179,129 @@
                   alt="transaction 1.png"
                   class="mt-4"
                 />
-                <a href="#" class="hover:text-[#6161eb] duration-200 mb-4">Transactions</a>
+                <button class="hover:text-[#6161eb] mb-4">Transactions</button>
               </div>
             </div>
             <!-- Flex Part 2 End ======> -->
           </div>
           <!-- Navigation Part End -->
           <!-- Navigation Part 2 Start -->
-           <div class="mx-5 my-5">
+          <!-- Add Money Part  -->
+          <div class="mx-5 my-5" id="addMoneyScreen">
+            <h4 class="mb-5 font-my text-[24px] font-semibold">Bank to Payoo</h4>
+            <p class="font-my text-[16px] text-left ml-10 mb-2">Bank Name</p>
+            <label class="select h-[60px] outline-none text-[22px]">
+              <select>
+                <option>Prime Bank</option>
+                <option>Sonali Bank</option>
+                <option>IFIC Bank PLC</option>
+                <option>AB Bank</option>
+              </select>
+            </label>
+            <input
+              type="text"
+              placeholder="Add Amount"
+              class="input my-6 outline-none"
+              id="addAmount"
+            />
+            <input
+              type="password"
+              placeholder="Enter Your 4 Digit Pin"
+              class="input outline-none"
+              id="addPin"
+            />
+          </div>
+          <button class="btn btn-info text-[#ffffff]" id="addClick">Click To Add Money</button>
+          <!-- Add Money Part  -->
+          <div class="mx-5 my-5" hidden>
             <div class="flex justify-between">
               <div class="">
-                <h4 class="text-[18px] font-semibold font-my ml-3">Latest Payment</h4>
+                <h4 class="text-[18px] font-semibold font-my ml-3">
+                  Latest Payment
+                </h4>
               </div>
               <div class="">
-                <a href="#" class="font-my text-[14px] hover:text-[#6161eb]">View All</a>
+                <a href="#" class="font-my text-[14px] hover:text-[#6161eb]"
+                  >View All</a
+                >
               </div>
             </div>
             <!-- ============> -->
-            <div class="bg-[#3d3d3d] h-[70px] rounded-lg mt-3 flex gap-3 items-center">
-                <div class="py-5 ml-5">
-                  <img src="images/wallet 1.png" alt="wallet 1.png">
-                </div>
-                <div class="py-2 text-left">
-                  <h4 class="text-[18px] font-my">Electricity Bill</h4>
-                  <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
-                </div>
-                <div class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+            <div
+              class="bg-[#3d3d3d] h-[70px] rounded-lg mt-3 flex gap-3 items-center"
+            >
+              <div class="py-5 ml-5">
+                <img src="images/wallet 1.png" alt="wallet 1.png" />
+              </div>
+              <div class="py-2 text-left">
+                <h4 class="text-[18px] font-my">Electricity Bill</h4>
+                <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
+              </div>
+              <div
+                class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200"
+              >
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
             </div>
             <!-- ============> -->
-            <div class="bg-[#3d3d3d] h-[70px] rounded-lg mt-3 flex gap-3 items-center">
-                <div class="py-5 ml-5">
-                  <img src="images/wallet 1.png" alt="wallet 1.png">
-                </div>
-                <div class="py-2 text-left">
-                  <h4 class="text-[18px] font-my">Bank Deposit</h4>
-                  <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
-                </div>
-                <div class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+            <div
+              class="bg-[#3d3d3d] h-[70px] rounded-lg mt-3 flex gap-3 items-center"
+            >
+              <div class="py-5 ml-5">
+                <img src="images/wallet 1.png" alt="wallet 1.png" />
+              </div>
+              <div class="py-2 text-left">
+                <h4 class="text-[18px] font-my">Bank Deposit</h4>
+                <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
+              </div>
+              <div
+                class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200"
+              >
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
             </div>
             <!-- ============> -->
-            <div class="bg-[#3d3d3d] h-[70px] rounded-lg mt-3 flex gap-3 items-center">
-                <div class="py-5 ml-5">
-                  <img src="images/wallet 1.png" alt="wallet 1.png">
-                </div>
-                <div class="py-2 text-left">
-                  <h4 class="text-[18px] font-my">Mobile Recharge</h4>
-                  <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
-                </div>
-                <div class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+            <div
+              class="bg-[#3d3d3d] h-[70px] rounded-lg mt-3 flex gap-3 items-center"
+            >
+              <div class="py-5 ml-5">
+                <img src="images/wallet 1.png" alt="wallet 1.png" />
+              </div>
+              <div class="py-2 text-left">
+                <h4 class="text-[18px] font-my">Mobile Recharge</h4>
+                <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
+              </div>
+              <div
+                class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200"
+              >
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
             </div>
             <!-- ============> -->
-            <div class="bg-[#3d3d3d] h-[70px] rounded-lg mt-3 flex gap-3 items-center">
-                <div class="py-5 ml-5">
-                  <img src="images/wallet 1.png" alt="wallet 1.png">
-                </div>
-                <div class="py-2 text-left">
-                  <h4 class="text-[18px] font-my">Gas Bill</h4>
-                  <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
-                </div>
-                <div class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+            <div
+              class="bg-[#3d3d3d] h-[70px] rounded-lg mt-3 flex gap-3 items-center"
+            >
+              <div class="py-5 ml-5">
+                <img src="images/wallet 1.png" alt="wallet 1.png" />
+              </div>
+              <div class="py-2 text-left">
+                <h4 class="text-[18px] font-my">Gas Bill</h4>
+                <h6 class="text-[14px] font-my">Today 01:44 AM</h6>
+              </div>
+              <div
+                class="text-[24px] py-3 ms-auto hover:text-[#6161eb] duration-200"
+              >
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
             </div>
             <!-- =================> -->
-           </div>
+          </div>
           <!-- Navigation Part 2 End -->
         </div>
       </div>
     </div>
     <!-- 2nd Part End -->
     <!-- JS Link Start -->
-    <script src="js/all.min.js"></script>
     <script src="js/script.js"></script>
     <!-- JS Link End -->
   </body>

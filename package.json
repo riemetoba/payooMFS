@@ -15,5 +15,13 @@
   },
   "devDependencies": {
     "daisyui": "^5.4.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riemetoba/payooMFS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/riemetoba/payooMFS/issues"
+  },
+  "homepage": "https://github.com/riemetoba/payooMFS#readme"
 }
